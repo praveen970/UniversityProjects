@@ -33,9 +33,9 @@ public class GetData {
                 // Print the content on the console
                 instructions = strLine.split("\t");
                 ArrayList<Integer> rows = new ArrayList<>();
-                rows.add(new Integer(Integer.parseInt(instructions[1])));
-                rows.add(new Integer(Integer.parseInt(instructions[2])));
-                rows.add(new Integer(Integer.parseInt(instructions[3])));
+                rows.add(Integer.parseInt(instructions[1]));
+                rows.add(Integer.parseInt(instructions[2]));
+                rows.add(Integer.parseInt(instructions[3]));
                 fileData.add(rows);
             }
             br.close();

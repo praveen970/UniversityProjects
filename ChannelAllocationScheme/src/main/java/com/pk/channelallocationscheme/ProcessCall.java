@@ -5,6 +5,9 @@
  */
 package com.pk.channelallocationscheme;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.TimerTask;
 
 /**
@@ -22,7 +25,8 @@ public class ProcessCall extends TimerTask{
 
     @Override
     public void run() {
-        System.out.println(serial + "Call started");
+        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        System.out.println(serial + "Call started"+dateFormat.format(new Date()));
     }
    
     
